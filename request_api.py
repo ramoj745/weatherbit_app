@@ -1,9 +1,19 @@
 import requests
+from dotenv import load_dotenv
+import os
+from pathlib import Path
+
+load_dotenv()
 
 def current_weather_req(city,country):
 
     url = "https://api.weatherbit.io/v2.0/current"
-    api_key = 'd618beaf36f0435a8216a98b77b697b6'
+    api_key = os.getenv('API_KEY')
+
+    if api_key:
+        print(f"API Key sucessfully retrieved.")
+    else:
+        print("API key not found or not loaded correctly.")
 
     param = {
         'city': f'{city}',
@@ -28,5 +38,7 @@ def current_weather_req(city,country):
     return (timezone, last_observed, wind_speed, temp, temp_feelslike, cloud_cvrg, precipitation,curr_weather)
 
 
+
+current_weather_req('Cavite','PH')
 
 
