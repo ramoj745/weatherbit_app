@@ -1,5 +1,5 @@
 
-## Weather App
+## Real-Time Weather App
 <p align="center">
     <img src="https://github.com/user-attachments/assets/86684383-973a-436c-b22c-0a30a74232ad" alt="Centered Image" width="350">
 </p>
