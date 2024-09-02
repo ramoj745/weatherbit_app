@@ -10,11 +10,6 @@ def current_weather_req(city,country):
     url = "https://api.weatherbit.io/v2.0/current"
     api_key = os.getenv('API_KEY')
 
-    if api_key:
-        print(f"API Key sucessfully retrieved.")
-    else:
-        print("API key not found or not loaded correctly.")
-
     param = {
         'city': f'{city}',
         'country': f'{country}',
