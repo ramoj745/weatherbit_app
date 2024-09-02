@@ -13,8 +13,7 @@ provinces_in_philippines = {
         "Apayao",
         "Benguet",
         "Ifugao",
-        "Kalinga",
-        "Mountain Province"
+        "Kalinga"
     ],
     "Region I": [
         "Ilocos Norte",
