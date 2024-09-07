@@ -31,8 +31,23 @@ def current_weather_req(city,country):
 
     return (timezone, last_observed, wind_speed, temp, temp_feelslike, cloud_cvrg, precipitation,curr_weather)
 
+def daily_weather(city,country):
+
+    url = "https://api.weatherbit.io/v2.0/forecast/daily"
+    api_key = os.getenv('API_KEY')
+
+    param = {
+        'city': f'{city}',
+        'country': f'{country}',
+        'key': api_key
+    }
+
+    response = requests.get(url, params=param)
+
+    daily_weather_data = response.json()
+
+    return daily_weather_data
 
 
-current_weather_req('Cavite','PH')
 
 
