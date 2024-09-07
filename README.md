@@ -13,7 +13,7 @@ Designed with a focus on seamless user experience, this project showcases a blen
 
 ---
 
-## Revamped UI + Enhanced 7-Day Forecast Feature 🚀
+## Revamped UI + New 7-Day Forecast Feature 🚀 
 
 With the integration of `customtkinter`, the app now boasts a sleek, modern interface that enhances your overall experience. Enjoy a visually appealing and intuitive weather application that’s easy to navigate.
 
