@@ -7,7 +7,7 @@ Experience a dynamic world of weather with this intuitive Real-Time Weather App!
 - **Explore All Regions:** Browse weather data for various regions and municipalities in the Philippines.
 - **API Integration:** Built to explore various API functionalities and capabilities.
 
-Designed with a focus on seamless user experience, this project showcases a blend of functionality and aesthetics.
+Designed with a focus on seamless user experience, this small project showcases a blend of functionality and aesthetics.
 
 - Developed with ❤️ by Ram
 
