@@ -156,7 +156,7 @@ def open_website_api():
 
 window = Tk()
 
-original_image = Image.open('.\\images\\weather-icon.png')
+original_image = Image.open('./weather-icon.png')
 resized_img = original_image.resize((150,110))
 icon2 = ImageTk.PhotoImage(resized_img)
 

@@ -9,7 +9,7 @@ import requests
 
 provinces_in_philippines = {
     "NCR": ["Manila"],
-    "CAR": ["Abra", "Apayao", "Benguet", "Ifugao", "Kalinga"],
+    "CAR": ["Abra", "Apayao", "Kalinga"],
     "Region I": ["Ilocos Norte", "Ilocos Sur", "La Union", "Pangasinan"],
     "Region II": ["Batanes", "Cagayan", "Isabela", "Nueva Vizcaya", "Quirino"],
     "Region III": ["Aurora", "Bataan", "Bulacan", "Nueva Ecija", "Pampanga", "Tarlac", "Zambales"],
@@ -18,7 +18,7 @@ provinces_in_philippines = {
     "Region V": ["Albay", "Camarines Norte", "Camarines Sur", "Catanduanes", "Masbate", "Sorsogon"],
     "Region VI": ["Aklan", "Antique", "Capiz", "Guimaras", "Iloilo", "Negros Occidental"],
     "Region VII": ["Bohol", "Cebu", "Siquijor"],
-    "Region VIII": ["Biliran", "Eastern Samar", "Leyte", "Samar", "Southern Leyte"],
+    "Region VIII": ["Biliran", "Leyte", "Samar", "Southern Leyte"],
     "Region IX": ["Zamboanga del Norte", "Zamboanga del Sur", "Zamboanga Sibugay"],
     "Region X": ["Bukidnon", "Camiguin", "Lanao del Norte", "Misamis Occidental", "Misamis Oriental"],
     "Region XI": ["Davao de Oro", "Davao del Norte", "Davao del Sur", "Davao Occidental", "Davao Oriental"],
@@ -47,7 +47,7 @@ class App(ctk.CTk):
         super().__init__()
         self.geometry("790x500")
         self.title("Ram's Weather App")
-        self.iconbitmap('.\\images\\logo_ni_ram2.ico')
+        self.iconbitmap('./logo_ni_ram2.ico')
         self.resizable(False, False)
         self.selected_city = ''
 
@@ -590,7 +590,7 @@ class App(ctk.CTk):
     
     def get_logo(self):
 
-        imglogo = Image.open(".\\images\\logo_ni_ram.png")
+        imglogo = Image.open("./logo_ni_ram.png")
         imglogo = imglogo.resize((200, 200), Image.BOX)
         imglogo = ImageTk.PhotoImage(imglogo)
         return imglogo
