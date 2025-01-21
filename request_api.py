@@ -4,10 +4,11 @@ import os
 
 load_dotenv()
 
+api_key = os.getenv("API_KEY")
+
 def current_weather_req(city,country):
 
     url = "https://api.weatherbit.io/v2.0/current"
-    api_key = os.getenv('API_KEY')
 
     param = {
         'city': f'{city}',
@@ -34,7 +35,6 @@ def current_weather_req(city,country):
 def daily_weather(city,country):
 
     url = "https://api.weatherbit.io/v2.0/forecast/daily"
-    api_key = os.getenv('API_KEY')
 
     param = {
         'city': f'{city}',
@@ -47,6 +47,8 @@ def daily_weather(city,country):
     daily_weather_data = response.json()
 
     return daily_weather_data
+
+
 
 
 
