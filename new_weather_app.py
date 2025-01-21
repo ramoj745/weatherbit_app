@@ -7,6 +7,7 @@ from PIL import Image, ImageTk
 from io import BytesIO
 import requests
 
+
 provinces_in_philippines = {
     "NCR": ["Manila"],
     "CAR": ["Abra", "Apayao", "Kalinga"],
@@ -33,7 +34,7 @@ def update_time():
     formatted_date = current_date.strftime("%A, %d %B %Y")
 
     app.label1.configure(text=current_time, font=('Leelawadee UI Semilight', 50))
-    app.label2.configure(text=formatted_date, font=('Leelawadee UI Semilight', 17))
+    app.label2.configure(text=formatted_date, font=('Leelawadee UI Semilight', 16))
 
     app.after(1000, update_time)
 
